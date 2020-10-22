@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="1513.0">MVC.Extra.Navigation.NavigationView</node>
+    <node x="0.0" y="77.0">MVC.UserInterface.IViewRenderer</node>
+    <node x="1063.0" y="1412.0">MVC.App</node>
+    <node x="855.0" y="1070.0">MVC.Controller.GoToResult</node>
+    <node x="644.0" y="969.0">MVC.Controller.IResult</node>
+    <node x="178.5" y="1412.0">MVC.View.IView</node>
+    <node x="743.0" y="1412.0">MVC.Extra.Navigation.NavigationViewModel</node>
+    <node x="0.0" y="1160.0">MVC.Extra.Navigation.NavigationOption</node>
+    <node x="1170.5" y="0.0">MVC.AppState</node>
+    <node x="952.25" y="247.0">MVC.Controller.ReflectedController</node>
+    <node x="324.0" y="1513.0">MVC.Extra.Text.TextView</node>
+    <node x="204.5" y="277.0">MVC.UserInterface.ConsoleUserInterface</node>
+    <node x="587.0" y="1412.0">MVC.UserInterface.RenderType</node>
+    <node x="1180.0" y="969.0">MVC.Location</node>
+    <node x="101.5" y="969.0">MVC.Option</node>
+    <node x="833.0" y="146.0">MVC.Controller.IController</node>
+    <node x="494.0" y="44.0">MVC.UserInterface.IInput</node>
+    <node x="644.0" y="1126.0">MVC.Controller.ExitResult</node>
+    <node x="433.0" y="1126.0">MVC.Controller.GoBackResult</node>
+    <node x="229.0" y="0.0">MVC.UserInterface.IOutput</node>
+    <node x="1157.142857142857" y="437.0">MVC.Extra.Navigation.NavigationController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="MVC.Extra.Navigation.NavigationOption" target="MVC.Option">
+      <point x="0.0" y="-103.5" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationController" target="MVC.AppState">
+      <point x="75.25" y="-69.5" />
+      <point x="1382.892857142857" y="412.0" />
+      <point x="1418.75" y="412.0" />
+      <point x="1418.75" y="121.0" />
+      <point x="1385.5" y="121.0" />
+      <point x="86.0" y="48.0" />
+    </edge>
+    <edge source="MVC.UserInterface.ConsoleUserInterface" target="MVC.UserInterface.IViewRenderer">
+      <point x="-98.0" y="-323.5" />
+      <point x="253.5" y="252.0" />
+      <point x="104.5" y="252.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="MVC.Extra.Text.TextView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="433.0" y="1488.0" />
+      <point x="349.5" y="1488.0" />
+      <point x="57.0" y="25.5" />
+    </edge>
+    <edge source="MVC.Controller.ReflectedController" target="MVC.Controller.IController">
+      <point x="-114.0" y="-70.0" />
+      <point x="1066.25" y="222.0" />
+      <point x="1061.0" y="222.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="MVC.Controller.GoToResult" target="MVC.Controller.IResult">
+      <point x="0.0" y="-81.5" />
+      <point x="995.0" y="1045.0" />
+      <point x="803.1666666666666" y="1045.0" />
+      <point x="63.66666666666663" y="25.5" />
+    </edge>
+    <edge source="MVC.UserInterface.ConsoleUserInterface" target="MVC.UserInterface.IInput">
+      <point x="98.0" y="-323.5" />
+      <point x="449.5" y="252.0" />
+      <point x="641.0" y="252.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationController" target="MVC.Controller.ReflectedController">
+      <point x="-75.25" y="-69.5" />
+      <point x="1232.392857142857" y="412.0" />
+      <point x="1180.25" y="412.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="MVC.Controller.IController" target="MVC.AppState">
+      <point x="0.0" y="-25.5" />
+      <point x="1061.0" y="121.0" />
+      <point x="1213.5" y="121.0" />
+      <point x="-86.0" y="48.0" />
+    </edge>
+    <edge source="MVC.Controller.ExitResult" target="MVC.Controller.IResult">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="MVC.Controller.ReflectedController" target="MVC.AppState">
+      <point x="114.0" y="-70.0" />
+      <point x="1294.25" y="222.0" />
+      <point x="1299.5" y="222.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="MVC.UserInterface.ConsoleUserInterface" target="MVC.UserInterface.IOutput">
+      <point x="0.0" y="-323.5" />
+      <point x="0.0" y="113.5" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="152.0" y="1488.0" />
+      <point x="235.5" y="1488.0" />
+      <point x="-57.0" y="25.5" />
+    </edge>
+    <edge source="MVC.Controller.GoBackResult" target="MVC.Controller.IResult">
+      <point x="0.0" y="-25.5" />
+      <point x="528.5" y="1045.0" />
+      <point x="675.8333333333334" y="1045.0" />
+      <point x="-63.66666666666663" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="763.8333333333334" y="320.41666666666663" />
+  <SelectedNodes>
+    <node>MVC.AppState</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

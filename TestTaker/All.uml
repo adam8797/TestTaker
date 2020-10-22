@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1372.25" y="515.5">Models.Response.BooleanResponse</node>
+    <node x="320.0" y="2342.0">MVC.App</node>
+    <node x="255.5" y="2033.0">MVC.Controller.IResult</node>
+    <node x="2403.0" y="2144.0">Views.Shared.ClearView</node>
+    <node x="918.25" y="515.5">Models.Response.ArrayResponse</node>
+    <node x="725.375" y="1805.0">Controllers.EditController</node>
+    <node x="2141.7499999999995" y="422.0">MVC.UserInterface.ConsoleUserInterface</node>
+    <node x="868.4389999999999" y="1128.0">Models.Question.MultipleChoiceQuestion</node>
+    <node x="1190.730769230769" y="1660.0">Controllers.LoadController</node>
+    <node x="0.0" y="2190.0">MVC.Controller.GoBackResult</node>
+    <node x="2166.2499999999995" y="145.0">MVC.UserInterface.IOutput</node>
+    <node x="382.6889999999999" y="30.5">Repository.Entity</node>
+    <node x="1841.0" y="2144.0">MVC.Extra.Navigation.NavigationView</node>
+    <node x="156.0" y="1660.0">State.QuizAppState</node>
+    <node x="1057.0" y="2144.0">Views.Edit.CreateSurveyView</node>
+    <node x="748.0" y="871.5">Models.Question.OptionQuestion</node>
+    <node x="211.0" y="2134.0">MVC.Controller.GoToResult</node>
+    <node x="1675.730769230769" y="1404.0">MVC.Extra.Navigation.NavigationOption</node>
+    <node x="2108.730769230769" y="1213.0">Models.Survey</node>
+    <node x="528.4389999999999" y="1117.0">Models.Question.TrueFalseQuestion</node>
+    <node x="1073.8764999999999" y="1117.0">Models.Question.MatchingQuestion</node>
+    <node x="935.9389999999999" y="215.5">Models.Response.Response</node>
+    <node x="2670.0" y="2033.0">MVC.UserInterface.RenderType</node>
+    <node x="728.7307692307692" y="1269.0">MVC.Controller.IController</node>
+    <node x="2431.2499999999995" y="189.0">MVC.UserInterface.IInput</node>
+    <node x="726.439" y="1128.0">Models.Question.RankQuestion</node>
+    <node x="449.75" y="249.0">Models.Question.Question</node>
+    <node x="565.0" y="894.0">Models.Question.ShortAnswerQuestion</node>
+    <node x="0.0" y="2342.0">MVC.Extra.Navigation.NavigationViewModel</node>
+    <node x="1751.75" y="2033.0">MVC.View.IView</node>
+    <node x="182.0" y="1448.0">MVC.AppState</node>
+    <node x="1353.730769230769" y="1649.0">Controllers.TakeSurveyController</node>
+    <node x="941.375" y="1426.0">MVC.Controller.ReflectedController</node>
+    <node x="1588.0" y="2144.0">Views.Edit.SurveyAlreadyLoadedMessageView</node>
+    <node x="2108.730769230769" y="1404.0">Models.Test</node>
+    <node x="129.75" y="172.0">Repository.IRepository</node>
+    <node x="1777.230769230769" y="1213.0">MVC.Option</node>
+    <node x="607.25" y="538.0">Models.Question.GradableQuestion</node>
+    <node x="404.37499999999994" y="1860.0">Controllers.MainMenuController</node>
+    <node x="941.7307692307692" y="1638.0">Controllers.TabulateController</node>
+    <node x="1145.25" y="515.5">Models.Response.StringResponse</node>
+    <node x="1780.2499999999998" y="222.0">MVC.UserInterface.IViewRenderer</node>
+    <node x="423.5" y="549.0">Models.Question.EssayQuestion</node>
+    <node x="1299.0" y="2144.0">Views.Edit.ChooseQuestionView</node>
+    <node x="2165.0" y="2144.0">MVC.Extra.Text.TextView</node>
+    <node x="163.25" y="427.0">Repository.ArrayRepository</node>
+    <node x="245.75" y="750.0">Repository.FileRepository</node>
+    <node x="747.0" y="2033.0">MVC.Location</node>
+    <node x="511.0" y="2190.0">MVC.Controller.ExitResult</node>
+    <node x="801.0" y="2342.0">Main</node>
+    <node x="552.9182692307692" y="1616.0">MVC.Extra.Navigation.NavigationController</node>
+  </nodes>
+  <notes>
+    <note x="1197.730769230769" y="1213.0">
+      <node>MVC.Controller.ReflectedController</node>
+      <value>Things get a little funky here, but it was inspired\nby Asp.Net MVC. This controller does a little work with\nreflection, so that new actions can be added without adding\ntons of plumbing.\n\nYou'll see all decendants have an Index() method, which\nis what will be called by default.\n\nT extends AppState</value>
+      <edge>
+        <point x="112.25" y="-70.0" />
+        <point x="1278.125" y="1401.0" />
+        <point x="1414.230769230769" y="1401.0" />
+        <point x="0.0" y="81.5" />
+      </edge>
+    </note>
+    <note x="0.0" y="1272.5">
+      <node>MVC.AppState</node>
+      <value>This framework is naturally stateful, so a type was needed to store it.\nAppState is abstract and intended to be implemented again with app specific state info</value>
+      <edge>
+        <point x="0.0" y="-48.0" />
+        <point x="0.0" y="22.0" />
+      </edge>
+    </note>
+    <note x="1048.3764999999999" y="886.5">
+      <node>Models.Question.MatchingQuestion</node>
+      <value>UserOptions represent the left side of a Matching Set. \nsuper.Options represent the right side</value>
+      <edge>
+        <point x="59.0" y="-25.5" />
+        <point x="0.0" y="22.0" />
+      </edge>
+    </note>
+    <note x="1633.2499999999998" y="0.0">
+      <node>MVC.UserInterface.IViewRenderer</node>
+      <value>At first, this was part of IOutput.\nHowever, there are some locations where I may want the user\nto be able to render views, but not have direct access to the Output.\n\nI wrestled with this for a while, and I decided to keep it separate.</value>
+      <edge>
+        <point x="0.0" y="-36.5" />
+        <point x="0.0" y="47.5" />
+      </edge>
+    </note>
+    <note x="0.0" y="42.5">
+      <node>Repository.IRepository</node>
+      <value>Could be easily implemented with a SQL database.</value>
+      <edge>
+        <point x="-48.25" y="-102.5" />
+        <point x="0.0" y="13.5" />
+      </edge>
+    </note>
+    <note x="797.6889999999999" y="0.0">
+      <node>Models.Response.Response</node>
+      <value>the Equals override is meant to be used when Grading.\nA GradableQuestion stores a \"CorrectAnswer\" of type Response, \nand then the user's response can be compared to it.\n\nYou'll notice there are only three types of Response.\nFirst time this was drawn, I noticed that many responses were basically the same.</value>
+      <edge>
+        <point x="51.75" y="-59.0" />
+        <point x="0.0" y="56.0" />
+      </edge>
+    </note>
+    <note x="612.75" y="261.0">
+      <node>Models.Question.GradableQuestion</node>
+      <value>T extends Response</value>
+      <edge>
+        <point x="0.0" y="-25.5" />
+        <point x="0.0" y="13.5" />
+      </edge>
+    </note>
+    <note x="2156.2499999999995" y="25.5">
+      <node>MVC.UserInterface.IOutput</node>
+      <value>Represents a stateful user output.\nCould easily be a GUI based system.</value>
+      <edge>
+        <point x="0.0" y="-113.5" />
+        <point x="0.0" y="22.0" />
+      </edge>
+    </note>
+    <note x="497.41826923076917" y="1482.5">
+      <node>MVC.Extra.Navigation.NavigationController</node>
+      <value>Provides simple Navigation capabilities for Controllers.</value>
+      <edge>
+        <point x="0.0" y="-69.5" />
+        <point x="0.0" y="13.5" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="Models.Response.Response" target="Repository.Entity">
+      <point x="-51.75" y="-59.0" />
+      <point x="987.6889999999999" y="142.0" />
+      <point x="469.08899999999994" y="142.0" />
+      <point x="38.400000000000034" y="25.5" />
+    </edge>
+    <edge source="Controllers.TakeSurveyController" target="MVC.Controller.ReflectedController">
+      <point x="0.0" y="-36.5" />
+      <point x="1449.730769230769" y="1591.0" />
+      <point x="1334.25" y="1591.0" />
+      <point x="168.375" y="70.0" />
+    </edge>
+    <edge source="MVC.Controller.ReflectedController" target="MVC.Controller.IController">
+      <point x="-112.25" y="-70.0" />
+      <point x="1053.625" y="1401.0" />
+      <point x="953.2307692307692" y="1401.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Controllers.MainMenuController" target="MVC.Extra.Navigation.NavigationController">
+      <point x="0.0" y="-36.5" />
+      <point x="554.875" y="1780.0" />
+      <point x="628.1682692307692" y="1780.0" />
+      <point x="-75.25" y="69.5" />
+    </edge>
+    <edge source="MVC.Controller.GoToResult" target="MVC.Controller.IResult">
+      <point x="0.0" y="-81.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Views.Edit.SurveyAlreadyLoadedMessageView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="1704.5" y="2124.0" />
+      <point x="1832.5833333333333" y="2124.0" />
+      <point x="-16.166666666666742" y="25.5" />
+    </edge>
+    <edge source="Models.Question.Question" target="Repository.Entity">
+      <point x="0.0" y="-25.5" />
+      <point x="521.25" y="152.0" />
+      <point x="449.88899999999995" y="152.0" />
+      <point x="19.200000000000045" y="25.5" />
+    </edge>
+    <edge source="Repository.ArrayRepository" target="Repository.IRepository">
+      <point x="-58.25" y="-136.5" />
+      <point x="221.5" y="407.0" />
+      <point x="226.25" y="407.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="MVC.Controller.ExitResult" target="MVC.Controller.IResult">
+      <point x="0.0" y="-25.5" />
+      <point x="606.5" y="2109.0" />
+      <point x="414.66666666666663" y="2109.0" />
+      <point x="63.66666666666663" y="25.5" />
+    </edge>
+    <edge source="Models.Response.ArrayResponse" target="Models.Response.Response">
+      <point x="0.0" y="-48.0" />
+      <point x="1021.75" y="407.0" />
+      <point x="1039.4389999999999" y="407.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="Views.Edit.ChooseQuestionView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="1433.5" y="2114.0" />
+      <point x="1800.25" y="2114.0" />
+      <point x="-48.5" y="25.5" />
+    </edge>
+    <edge source="State.QuizAppState" target="MVC.AppState">
+      <point x="0.0" y="-25.5" />
+      <point x="-64.5" y="48.0" />
+    </edge>
+    <edge source="Repository.ArrayRepository" target="Repository.Entity">
+      <point x="58.25" y="-136.5" />
+      <point x="338.0" y="407.0" />
+      <point x="353.67" y="407.0" />
+      <point x="353.67" y="142.0" />
+      <point x="411.4889999999999" y="142.0" />
+      <point x="-19.19999999999999" y="25.5" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationOption" target="MVC.Option">
+      <point x="0.0" y="-103.5" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="Models.Question.OptionQuestion" target="Models.Question.GradableQuestion">
+      <point x="-53.25" y="-37.0" />
+      <point x="801.25" y="725.0" />
+      <point x="725.0" y="725.0" />
+      <point x="39.25" y="25.5" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationController" target="MVC.AppState">
+      <point x="-100.33333333333326" y="-69.5" />
+      <point x="603.0849358974359" y="1591.0" />
+      <point x="375.5" y="1591.0" />
+      <point x="64.5" y="48.0" />
+    </edge>
+    <edge source="Repository.FileRepository" target="Repository.ArrayRepository">
+      <point x="-48.75" y="-158.5" />
+      <point x="294.5" y="725.0" />
+      <point x="279.75" y="725.0" />
+      <point x="0.0" y="136.5" />
+    </edge>
+    <edge source="Models.Response.BooleanResponse" target="Models.Response.Response">
+      <point x="0.0" y="-48.0" />
+      <point x="1480.25" y="397.0" />
+      <point x="1122.2389999999998" y="397.0" />
+      <point x="82.79999999999995" y="59.0" />
+    </edge>
+    <edge source="MVC.Extra.Text.TextView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="2274.0" y="2114.0" />
+      <point x="1897.25" y="2114.0" />
+      <point x="48.5" y="25.5" />
+    </edge>
+    <edge source="Repository.IRepository" target="Repository.Entity">
+      <point x="48.25" y="-102.5" />
+      <point x="274.5" y="132.0" />
+      <point x="392.28899999999993" y="132.0" />
+      <point x="-38.39999999999998" y="25.5" />
+    </edge>
+    <edge source="Models.Question.EssayQuestion" target="Models.Question.Question">
+      <point x="0.0" y="-14.5" />
+      <point x="-35.75" y="25.5" />
+    </edge>
+    <edge source="MVC.UserInterface.ConsoleUserInterface" target="MVC.UserInterface.IInput">
+      <point x="98.0" y="-323.5" />
+      <point x="2386.7499999999995" y="397.0" />
+      <point x="2578.2499999999995" y="397.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="Models.Question.TrueFalseQuestion" target="Models.Question.OptionQuestion">
+      <point x="0.0" y="-25.5" />
+      <point x="617.4389999999999" y="1097.0" />
+      <point x="774.625" y="1097.0" />
+      <point x="-79.875" y="37.0" />
+    </edge>
+    <edge source="Models.Question.GradableQuestion" target="Models.Response.Response">
+      <point x="52.33333333333337" y="-25.5" />
+      <point x="738.0833333333334" y="397.0" />
+      <point x="956.6389999999999" y="397.0" />
+      <point x="-82.79999999999995" y="59.0" />
+    </edge>
+    <edge source="MVC.UserInterface.ConsoleUserInterface" target="MVC.UserInterface.IOutput">
+      <point x="0.0" y="-323.5" />
+      <point x="0.0" y="113.5" />
+    </edge>
+    <edge source="Views.Shared.ClearView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="2514.0" y="2104.0" />
+      <point x="1929.5833333333333" y="2104.0" />
+      <point x="80.83333333333326" y="25.5" />
+    </edge>
+    <edge source="Controllers.TabulateController" target="MVC.Controller.ReflectedController">
+      <point x="0.0" y="-47.5" />
+      <point x="1056.230769230769" y="1591.0" />
+      <point x="1109.75" y="1591.0" />
+      <point x="-56.125" y="70.0" />
+    </edge>
+    <edge source="Models.Question.RankQuestion" target="Models.Question.OptionQuestion">
+      <point x="0.0" y="-14.5" />
+      <point x="787.439" y="1097.0" />
+      <point x="827.875" y="1097.0" />
+      <point x="-26.625" y="37.0" />
+    </edge>
+    <edge source="Repository.FileRepository" target="Repository.Entity">
+      <point x="48.75" y="-158.5" />
+      <point x="392.0" y="725.0" />
+      <point x="413.0" y="725.0" />
+      <point x="413.0" y="152.0" />
+      <point x="430.6889999999999" y="152.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="MVC.Controller.GoBackResult" target="MVC.Controller.IResult">
+      <point x="0.0" y="-25.5" />
+      <point x="95.5" y="2109.0" />
+      <point x="287.3333333333333" y="2109.0" />
+      <point x="-63.666666666666686" y="25.5" />
+    </edge>
+    <edge source="Models.Response.StringResponse" target="Models.Response.Response">
+      <point x="0.0" y="-48.0" />
+      <point x="1248.75" y="407.0" />
+      <point x="1080.839" y="407.0" />
+      <point x="41.40000000000009" y="59.0" />
+    </edge>
+    <edge source="MVC.UserInterface.ConsoleUserInterface" target="MVC.UserInterface.IViewRenderer">
+      <point x="-98.0" y="-323.5" />
+      <point x="2190.7499999999995" y="397.0" />
+      <point x="1884.7499999999998" y="397.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Models.Question.OptionQuestion" target="Models.Response.Response">
+      <point x="53.25" y="-37.0" />
+      <point x="907.75" y="407.0" />
+      <point x="998.039" y="407.0" />
+      <point x="-41.39999999999998" y="59.0" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationController" target="MVC.Controller.ReflectedController">
+      <point x="100.33333333333337" y="-69.5" />
+      <point x="803.7516025641025" y="1591.0" />
+      <point x="997.5" y="1591.0" />
+      <point x="-168.375" y="70.0" />
+    </edge>
+    <edge source="Views.Edit.CreateSurveyView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="1168.0" y="2104.0" />
+      <point x="1767.9166666666667" y="2104.0" />
+      <point x="-80.83333333333326" y="25.5" />
+    </edge>
+    <edge source="Models.Question.ShortAnswerQuestion" target="Models.Question.GradableQuestion">
+      <point x="0.0" y="-14.5" />
+      <point x="-39.25" y="25.5" />
+    </edge>
+    <edge source="Controllers.EditController" target="MVC.Extra.Navigation.NavigationController">
+      <point x="0.0" y="-91.5" />
+      <point x="875.875" y="1780.0" />
+      <point x="778.6682692307692" y="1780.0" />
+      <point x="75.25" y="69.5" />
+    </edge>
+    <edge source="MVC.Extra.Navigation.NavigationView" target="MVC.View.IView">
+      <point x="0.0" y="-25.5" />
+      <point x="1993.0" y="2124.0" />
+      <point x="1864.9166666666667" y="2124.0" />
+      <point x="16.166666666666742" y="25.5" />
+    </edge>
+    <edge source="Models.Question.MatchingQuestion" target="Models.Question.OptionQuestion">
+      <point x="-59.0" y="-25.5" />
+      <point x="1132.8764999999999" y="1087.0" />
+      <point x="934.375" y="1087.0" />
+      <point x="79.875" y="37.0" />
+    </edge>
+    <edge source="Models.Question.MultipleChoiceQuestion" target="Models.Question.OptionQuestion">
+      <point x="0.0" y="-14.5" />
+      <point x="956.9389999999999" y="1097.0" />
+      <point x="881.125" y="1097.0" />
+      <point x="26.625" y="37.0" />
+    </edge>
+    <edge source="Models.Question.GradableQuestion" target="Models.Question.Question">
+      <point x="-52.33333333333337" y="-25.5" />
+      <point x="633.4166666666666" y="407.0" />
+      <point x="557.0" y="407.0" />
+      <point x="35.75" y="25.5" />
+    </edge>
+    <edge source="Models.Test" target="Models.Survey">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="Controllers.LoadController" target="MVC.Controller.ReflectedController">
+      <point x="0.0" y="-25.5" />
+      <point x="1262.230769230769" y="1591.0" />
+      <point x="1222.0" y="1591.0" />
+      <point x="56.125" y="70.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1390.4999999999998" y="1874.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
